@@ -1,0 +1,524 @@
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Received command 'offer' from 127.0.0.1:36915
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Dump for 'offer' from 127.0.0.1:36915: { "supports": [ "load limit" ], "sdp": "v=0
+o=- 3817145180 3817145180 IN IP4 192.168.11.161
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 4030 RTP/AVP 8 101
+c=IN IP4 192.168.11.161
+b=AS:64000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=rtcp:4031 IN IP4 192.168.11.161
+a=ssrc:237594871 cname:306173a316734fef
+", "ICE": "force", "flags": [ "generate-mid", "full-rtcp-attribute" ], "replace": [ "origin", "session-connection" ], "transport-protocol": "UDP/TLS/RTP/SAVPF", "rtcp-mux": [ "accept", "offer" ], "SDES": [ "off" ], "call-id": "b76ac0a3-ba4a-1239-6a86-f8a03d5904eb", "via-branch": "z9hG4bK4pvjjXjyya0HH0", "received-from": [ "IP4", "192.168.11.1" ], "from-tag": "161gQ76Q0yZym", "command": "offer" }
+NOTICE: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating new call
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Default sink codec is PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Output DTMF payload type is 101
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating codec handler for PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating codec handler for telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: creating send_timer
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: creating send_timer
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: creating send_timer
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: creating send_timer
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating passive DTLS connection context
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating passive DTLS connection context
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: set FILLED flag for stream 192.168.11.161:4030
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: set FILLED flag for stream 192.168.11.161:4031
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Replying to 'offer' from 127.0.0.1:36915 (elapsed time 0.003327 sec)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Response dump for 'offer' to 127.0.0.1:36915: { "sdp": "v=0
+o=- 3817145180 3817145180 IN IP4 192.168.11.100
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 30050 UDP/TLS/RTP/SAVPF 8 101
+c=IN IP4 192.168.11.100
+b=AS:64000
+a=ssrc:237594871 cname:306173a316734fef
+a=mid:1
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=sendrecv
+a=rtcp:30051 IN IP4 192.168.11.100
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-1 F6:F3:3C:BC:6E:AD:E0:8E:FB:23:DA:41:FE:51:85:01:62:26:4F:F4
+a=ice-ufrag:4Ae8Ahgb
+a=ice-pwd:PEzqrQKHC7lakQlCPN8rWh7YJc
+a=candidate:R6epEXszrsAWWB1U 1 UDP 2130706431 192.168.11.100 30050 typ host
+a=candidate:R6epEXszrsAWWB1U 2 UDP 2130706430 192.168.11.100 30051 typ host
+", "result": "ok" }
+DEBUG: timer run time = 0.000085 sec
+DEBUG: timer run time = 0.000059 sec
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Unknown STUN attribute: 0xc057
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Created candidate pair R6epEXszrsAWWB1U:8e01c49239894c:1 between 192.168.11.100 and 192.168.11.142:55062, type prflx
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Triggering check for R6epEXszrsAWWB1U:8e01c49239894c:1
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: scheduling timer object at 1608127584.725375
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Successful STUN binding request from 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Received command 'answer' from 127.0.0.1:37884
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Dump for 'answer' from 127.0.0.1:37884: { "supports": [ "load limit" ], "sdp": "v=0
+o=- 6088898731244523021 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=msid-semantic: WMS 233d24eb-a26b-4206-8fd1-1897920e5ca4
+m=audio 55062 UDP/TLS/RTP/SAVPF 8 101
+c=IN IP4 192.168.11.142
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:3629917804 1 udp 2122260223 192.168.11.142 55062 typ host generation 0 network-id 1 network-cost 10
+a=ice-ufrag:jJNN
+a=ice-pwd:viirJhYlT0t/z9FOQmM15FBw
+a=ice-options:trickle
+a=fingerprint:sha-256 29:0B:31:EF:58:DC:0D:47:C0:BB:25:5D:1F:86:92:22:BA:46:49:3B:C6:3D:45:14:44:D8:F0:20:21:A6:7C:E7
+a=setup:active
+a=mid:1
+a=sendrecv
+a=msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=rtcp-mux
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=ssrc:1255320174 cname:onucO0vkDmW7JgQO
+a=ssrc:1255320174 msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=ssrc:1255320174 mslabel:233d24eb-a26b-4206-8fd1-1897920e5ca4
+a=ssrc:1255320174 label:a27b75d0-8269-405c-b79f-67a0107032ba
+", "DTLS": "off", "ICE": "remove", "replace": [ "origin", "session-connection" ], "transport-protocol": "RTP/AVP", "rtcp-mux": [ "demux" ], "SDES": [ "off" ], "call-id": "b76ac0a3-ba4a-1239-6a86-f8a03d5904eb", "via-branch": "z9hG4bK4pvjjXjyya0HH0", "received-from": [ "IP4", "192.168.11.142" ], "from-tag": "161gQ76Q0yZym", "to-tag": "0mppedbjig", "command": "answer" }
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Sending DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Default sink codec is PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Output DTMF payload type is 101
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating codec handler for PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Creating codec handler for telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: set FILLED flag for stream 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: set FILLED flag for stream :0
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Replacing previously learned prflx ICE candidate with 3629917804:1
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Recalculating all ICE pair priorities
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: scheduling timer object at 1608127584.834480
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sending ICE/STUN request for candidate pair R6epEXszrsAWWB1U:3629917804:1 from 192.168.11.100 to 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: scheduling timer object at 1608127584.745842
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: scheduling timer object at 1608127584.834480
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Replying to 'answer' from 127.0.0.1:37884 (elapsed time 0.014401 sec)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Response dump for 'answer' to 127.0.0.1:37884: { "sdp": "v=0
+o=- 6088898731244523021 2 IN IP4 192.168.11.100
+s=-
+t=0 0
+a=msid-semantic: WMS 233d24eb-a26b-4206-8fd1-1897920e5ca4
+m=audio 30062 RTP/AVP 8 101
+c=IN IP4 192.168.11.100
+a=msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=ssrc:1255320174 cname:onucO0vkDmW7JgQO
+a=ssrc:1255320174 msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=ssrc:1255320174 mslabel:233d24eb-a26b-4206-8fd1-1897920e5ca4
+a=ssrc:1255320174 label:a27b75d0-8269-405c-b79f-67a0107032ba
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp:30063
+", "result": "ok" }
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: DTLS: Peer certificate accepted
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Received ICE/STUN response code 0 for candidate pair R6epEXszrsAWWB1U:3629917804:1 from 192.168.11.142:55062 to 192.168.11.100
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Setting ICE candidate pair R6epEXszrsAWWB1U:3629917804:1 as succeeded
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: DTLS handshake successful
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Best succeeded ICE pair with all components is R6epEXszrsAWWB1U:3629917804:1
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: scheduling timer object at 1608127584.860469
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: ICE not completed yet, but can use pair R6epEXszrsAWWB1U:3629917804:1
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: DTLS-SRTP successfully negotiated
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: SRTP keys, incoming:
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: --- AES_CM_128_HMAC_SHA1_80 key EKnEJM8iQXXNRNsWVn55AA== salt GhRf7/lpmmofDRFj0ZQ=
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: SRTP keys, outgoing:
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: --- AES_CM_128_HMAC_SHA1_80 key ZxI+60ruhzJ/mtXL6dC3Cw== salt AgJDiFYuWJZ3lFVbF/Q=
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: ICE negotiated: local interface 192.168.11.100
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: DTLS-SRTP successfully negotiated
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: SRTP keys, incoming:
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: --- AES_CM_128_HMAC_SHA1_80 key EKnEJM8iQXXNRNsWVn55AA== salt GhRf7/lpmmofDRFj0ZQ=
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: SRTP keys, outgoing:
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: --- AES_CM_128_HMAC_SHA1_80 key ZxI+60ruhzJ/mtXL6dC3Cw== salt AgJDiFYuWJZ3lFVbF/Q=
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Sending DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Unknown STUN attribute: 0xc057
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Successful STUN binding request from 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12740 TS 1997390051)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12741 TS 1997390211)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Unknown STUN attribute: 0xc057
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Successful STUN binding request from 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: scheduling timer object at 1608127584.860469
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12742 TS 1997390371)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12743 TS 1997390531)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: Start nominating ICE pairs
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: Nominating ICE pair R6epEXszrsAWWB1U:3629917804:1
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: scheduling timer object at 1608127584.960543
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: Sending nominating ICE/STUN request for candidate pair R6epEXszrsAWWB1U:3629917804:1 from 192.168.11.100 to 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb/0mppedbjig/1]: scheduling timer object at 1608127584.880543
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 201
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: RR from e2968f7 about 0: FL 0 TL 0 HSR 0 J 0 LSR 0 DLSR 0
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: No payload type known for RTCP RR, discarding
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 202
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 201
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: RR from e2968f7 about 0: FL 0 TL 0 HSR 0 J 0 LSR 0 DLSR 0
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: No payload type known for RTCP RR, discarding
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 202
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Received ICE/STUN response code 0 for candidate pair R6epEXszrsAWWB1U:3629917804:1 from 192.168.11.142:55062 to 192.168.11.100
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Setting nominated ICE candidate pair R6epEXszrsAWWB1U:3629917804:1 as valid
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: ICE completed, using pair R6epEXszrsAWWB1U:3629917804:1
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: ICE negotiated: local interface 192.168.11.100
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31197 TS 160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12744 TS 1997390691)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31198 TS 320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12745 TS 1997390851)
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Received command 'offer' from 127.0.0.1:34826
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Dump for 'offer' from 127.0.0.1:34826: { "supports": [ "load limit" ], "sdp": "v=0
+o=- 3817145180 3817145180 IN IP4 192.168.11.161
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 4030 RTP/AVP 8 101
+c=IN IP4 192.168.11.161
+b=AS:64000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=rtcp:4031 IN IP4 192.168.11.161
+a=ssrc:237594871 cname:306173a316734fef
+", "ICE": "force", "flags": [ "generate-mid", "full-rtcp-attribute" ], "replace": [ "origin", "session-connection" ], "transport-protocol": "UDP/TLS/RTP/SAVPF", "rtcp-mux": [ "accept", "offer" ], "SDES": [ "off" ], "call-id": "b76ac0a3-ba4a-1239-6a86-f8a03d5904eb", "received-from": [ "IP4", "192.168.11.1" ], "from-tag": "161gQ76Q0yZym", "to-tag": "0mppedbjig", "command": "offer" }
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Default sink codec is PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Output DTMF payload type is 101
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for telephone-event/8000
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Replying to 'offer' from 127.0.0.1:34826 (elapsed time 0.001851 sec)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Response dump for 'offer' to 127.0.0.1:34826: { "sdp": "v=0
+o=- 3817145180 3817145180 IN IP4 192.168.11.100
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 30050 UDP/TLS/RTP/SAVPF 8 101
+c=IN IP4 192.168.11.100
+b=AS:64000
+a=ssrc:237594871 cname:306173a316734fef
+a=mid:1
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=sendrecv
+a=rtcp:30051 IN IP4 192.168.11.100
+a=rtcp-mux
+a=setup:actpass
+a=fingerprint:sha-256 AE:EA:3B:C8:16:34:FC:88:D6:C8:D1:A0:FE:1E:C7:F4:31:52:8A:97:25:36:74:08:2B:DC:51:08:F7:77:5D:2A
+a=ice-ufrag:4Ae8Ahgb
+a=ice-pwd:PEzqrQKHC7lakQlCPN8rWh7YJc
+a=ice-options:trickle
+a=candidate:R6epEXszrsAWWB1U 1 UDP 2130706431 192.168.11.100 30050 typ host
+a=candidate:R6epEXszrsAWWB1U 2 UDP 2130706430 192.168.11.100 30051 typ host
+a=remote-candidates:1 192.168.11.142 55062
+a=end-of-candidates
+", "result": "ok" }
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31199 TS 480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.161:4030 (RTP seq 12746 TS 1997391011)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31200 TS 640)
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Received command 'answer' from 127.0.0.1:37884
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Dump for 'answer' from 127.0.0.1:37884: { "supports": [ "load limit" ], "sdp": "v=0
+o=- 6088898731244523021 3 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=msid-semantic: WMS 233d24eb-a26b-4206-8fd1-1897920e5ca4
+m=audio 55062 UDP/TLS/RTP/SAVPF 8 101
+c=IN IP4 192.168.11.142
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:3629917804 1 udp 2122260223 192.168.11.142 55062 typ host generation 0 network-id 1 network-cost 10
+a=ice-ufrag:jJNN
+a=ice-pwd:viirJhYlT0t/z9FOQmM15FBw
+a=ice-options:trickle
+a=fingerprint:sha-256 29:0B:31:EF:58:DC:0D:47:C0:BB:25:5D:1F:86:92:22:BA:46:49:3B:C6:3D:45:14:44:D8:F0:20:21:A6:7C:E7
+a=setup:active
+a=mid:1
+a=sendrecv
+a=msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=rtcp-mux
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=ssrc:1255320174 cname:onucO0vkDmW7JgQO
+a=ssrc:1255320174 msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=ssrc:1255320174 mslabel:233d24eb-a26b-4206-8fd1-1897920e5ca4
+a=ssrc:1255320174 label:a27b75d0-8269-405c-b79f-67a0107032ba
+", "DTLS": "off", "ICE": "remove", "replace": [ "origin", "session-connection" ], "transport-protocol": "RTP/AVP", "rtcp-mux": [ "demux" ], "SDES": [ "off" ], "call-id": "b76ac0a3-ba4a-1239-6a86-f8a03d5904eb", "via-branch": "z9hG4bK68e4NKm5rvcQr0", "received-from": [ "IP4", "192.168.11.142" ], "from-tag": "161gQ76Q0yZym", "to-tag": "0mppedbjig", "command": "answer" }
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Default sink codec is PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Output DTMF payload type is 101
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for PCMA/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Sink supports codec telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Using passthrough handler for telephone-event/8000
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Dropping new ICE candidate 3629917804 in favour of 3629917804:1
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Replying to 'answer' from 127.0.0.1:37884 (elapsed time 0.000656 sec)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Response dump for 'answer' to 127.0.0.1:37884: { "sdp": "v=0
+o=- 6088898731244523021 3 IN IP4 192.168.11.100
+s=-
+t=0 0
+a=msid-semantic: WMS 233d24eb-a26b-4206-8fd1-1897920e5ca4
+m=audio 30062 RTP/AVP 8 101
+c=IN IP4 192.168.11.100
+a=msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=ssrc:1255320174 cname:onucO0vkDmW7JgQO
+a=ssrc:1255320174 msid:233d24eb-a26b-4206-8fd1-1897920e5ca4 a27b75d0-8269-405c-b79f-67a0107032ba
+a=ssrc:1255320174 mslabel:233d24eb-a26b-4206-8fd1-1897920e5ca4
+a=ssrc:1255320174 label:a27b75d0-8269-405c-b79f-67a0107032ba
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+a=rtcp:30063
+", "result": "ok" }
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31201 TS 800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31202 TS 960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31203 TS 1120)
+DEBUG: timer run time = 0.000071 sec
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31204 TS 1280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31205 TS 1440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31206 TS 1600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31207 TS 1760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31208 TS 1920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31209 TS 2080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31210 TS 2240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31211 TS 2400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31212 TS 2560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31213 TS 2720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31214 TS 2880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31215 TS 3040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31216 TS 3200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31217 TS 3360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31218 TS 3520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31219 TS 3680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31220 TS 3840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31221 TS 4000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31222 TS 4160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31223 TS 4320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31224 TS 4480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31225 TS 4640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31226 TS 4800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31227 TS 4960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31228 TS 5120)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31229 TS 5280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31230 TS 5440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31231 TS 5600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31232 TS 5760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31233 TS 5920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31234 TS 6080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31235 TS 6240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31236 TS 6400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31237 TS 6560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31239 TS 6880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31238 TS 6720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31240 TS 7040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31241 TS 7200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31242 TS 7360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31243 TS 7520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31244 TS 7680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Unknown STUN attribute: 0xc057
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Successful STUN binding request from 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31245 TS 7840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31246 TS 8000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31247 TS 8160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31248 TS 8320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31249 TS 8480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31250 TS 8640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31251 TS 8800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31252 TS 8960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31253 TS 9120)
+DEBUG: timer run time = 0.000066 sec
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31254 TS 9280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31255 TS 9440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31256 TS 9600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31257 TS 9760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31258 TS 9920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31259 TS 10080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31260 TS 10240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31261 TS 10400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31262 TS 10560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31263 TS 10720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31264 TS 10880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31265 TS 11040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31266 TS 11200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31267 TS 11360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31268 TS 11520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31269 TS 11680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31270 TS 11840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31271 TS 12000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31272 TS 12160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31273 TS 12320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31274 TS 12480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31275 TS 12640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31276 TS 12800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31277 TS 12960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31278 TS 13120)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31279 TS 13280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31280 TS 13440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31281 TS 13600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31282 TS 13760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31283 TS 13920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31284 TS 14080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31285 TS 14240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31286 TS 14400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31287 TS 14560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31288 TS 14720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31289 TS 14880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31290 TS 15040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31291 TS 15200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31292 TS 15360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31293 TS 15520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31294 TS 15680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31295 TS 15840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31296 TS 16000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31297 TS 16160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31298 TS 16320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31299 TS 16480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31300 TS 16640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Unknown STUN attribute: 0xc057
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Successful STUN binding request from 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31301 TS 16800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31302 TS 16960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31303 TS 17120)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31304 TS 17280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31305 TS 17440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31306 TS 17600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31307 TS 17760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31308 TS 17920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31309 TS 18080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31310 TS 18240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31311 TS 18400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31312 TS 18560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31313 TS 18720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31314 TS 18880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31315 TS 19040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31316 TS 19200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31317 TS 19360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31318 TS 19520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31319 TS 19680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31320 TS 19840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31321 TS 20000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31322 TS 20160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31323 TS 20320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31324 TS 20480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31325 TS 20640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31326 TS 20800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31327 TS 20960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31328 TS 21120)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31329 TS 21280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31330 TS 21440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31331 TS 21600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31332 TS 21760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31333 TS 21920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31334 TS 22080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31335 TS 22240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31336 TS 22400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31337 TS 22560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31338 TS 22720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31339 TS 22880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31340 TS 23040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31341 TS 23200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31342 TS 23360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31343 TS 23520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31344 TS 23680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31345 TS 23840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31346 TS 24000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31347 TS 24160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31348 TS 24320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31349 TS 24480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31350 TS 24640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31351 TS 24800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31352 TS 24960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31353 TS 25120)
+DEBUG: timer run time = 0.000060 sec
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30062]: Confirmed peer address as 192.168.11.161:4030
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31354 TS 25280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31355 TS 25440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31356 TS 25600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31357 TS 25760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31358 TS 25920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31359 TS 26080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30050]: Processing incoming DTLS packet
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31360 TS 26240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31361 TS 26400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31362 TS 26560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31363 TS 26720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31364 TS 26880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31365 TS 27040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31366 TS 27200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31367 TS 27360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31368 TS 27520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31369 TS 27680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31370 TS 27840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31371 TS 28000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31372 TS 28160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31373 TS 28320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31374 TS 28480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31375 TS 28640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31376 TS 28800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31377 TS 28960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31378 TS 29120)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31379 TS 29280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31380 TS 29440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31381 TS 29600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31382 TS 29760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31383 TS 29920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31384 TS 30080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31385 TS 30240)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31386 TS 30400)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31387 TS 30560)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31388 TS 30720)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31389 TS 30880)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31390 TS 31040)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31391 TS 31200)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31392 TS 31360)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31393 TS 31520)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31394 TS 31680)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31395 TS 31840)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31396 TS 32000)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31397 TS 32160)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31398 TS 32320)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31399 TS 32480)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31400 TS 32640)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31401 TS 32800)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31402 TS 32960)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31403 TS 33120)
+DEBUG: timer run time = 0.000061 sec
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31404 TS 33280)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31405 TS 33440)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31406 TS 33600)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31407 TS 33760)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31408 TS 33920)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062 (RTP seq 31409 TS 34080)
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 200
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: SR from e2968f7: RTP TS 34040 PC 213 OC 34080 NTP TS 3817145188/1099081701=3817145188.255900
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: RR from e2968f7 about 4ad2aa6e: FL 0 TL 0 HSR 12746 J 0 LSR 0 DLSR 0
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: No payload type known for RTCP RR, discarding
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 201
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 202
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: RR from e2968f7 about 4ad2aa6e: FL 0 TL 0 HSR 12746 J 0 LSR 0 DLSR 0
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: No payload type known for RTCP RR, discarding
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 203
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 202
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Calling handler for RTCP packet type 203
+INFO: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb port 30063]: Confirmed peer address as 192.168.11.161:4031
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062
+DEBUG: [b76ac0a3-ba4a-1239-6a86-f8a03d5904eb]: Forward to sink endpoint: 192.168.11.142:55062
+DEBUG: timer run time = 0.000076 sec
